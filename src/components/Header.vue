@@ -18,9 +18,9 @@
     <div
       class="user"
       @click="toAbout">
-      <img
+      <!-- <img
         :src="image"
-        :alt="name" />
+        :alt="name" /> -->
     </div>
   </header>
 </template>
@@ -100,9 +100,9 @@ header {
     &:hover {
       background-color: darken($gray-200, 10%);
     }
-    img {
-      width: 100%;
-    }
+    // img {
+    //   width: 100%;
+    // }
   }
   @include media-breakpoint-down(sm) {
     .nav {

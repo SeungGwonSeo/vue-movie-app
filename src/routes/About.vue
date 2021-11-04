@@ -4,9 +4,9 @@
       <Loader 
         v-if="imageLoading"
         absolute />
-      <img
+      <!-- <img
         :src="image"
-        :alt="name" />
+        :alt="name" /> -->
     </div>
     <div class="name">
       {{ name }}
@@ -63,9 +63,9 @@ export default {
     box-sizing: border-box;
     background-color: $gray-200;
     position: relative;
-    img {
-      width: 100%;
-    }
+    // img {
+    //   width: 100%;
+    // }
     
   }
   .name {
