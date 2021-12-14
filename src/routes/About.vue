@@ -41,8 +41,13 @@ export default {
   },
   methods: {
     async init() {
-      await this.$loadImage(this.image)
-      this.imageLoading = false
+      const image = this.image
+      if (!image || image === 'N/A') {
+        this.imageLoading = false
+      } else {
+        await this.$loadImage(image)
+        this.imageLoading = false
+      }
     }
   }
   
